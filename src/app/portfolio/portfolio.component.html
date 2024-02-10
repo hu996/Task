@@ -1,0 +1,68 @@
+<div class="portfolio py-5">
+
+  <div class="container text-white">
+
+    <div class="heade text-center mb-3" style="color: black;">
+      <h2 class="mt-5">portfolio Component</h2>
+
+      <div class="head d-flex aline-center justify-content-center align-items-center">
+
+        <div class="line me-3 bg-black" ></div>
+        <i class="fa-solid fa-star"></i>
+
+        <div class="line ms-3 bg-black"></div>
+
+      </div>
+     </div>
+
+    <div class="row my-5 gy-2">
+
+
+<div class="col-md-4 " *ngFor="let image of images">
+  <div class="item" (click)="ChangeImage(image)">
+
+  <img [src]="image"  class="img-fluid w-100">
+
+  <div class="imgoverlay">
+    <i [class]="imageIcone"  ></i>
+  </div>
+
+  </div>
+</div>
+
+</div>
+
+
+<div class="row  gy-2">
+
+
+  <div class="col-md-4" *ngFor="let image of images">
+    <div class="item">
+
+    <img [src]="image"  class="img-fluid w-100">
+
+    <div class="imgoverlay">
+      <i [class]="imageIcone" ></i>
+    </div>
+
+    </div>
+  </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+<div class="portoverlay d-none">
+
+  <img [src]="overlayImage">
+  </div>

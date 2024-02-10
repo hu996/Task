@@ -1,0 +1,15 @@
+input:focus{
+
+
+    border-color: black;
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+}
+input{
+border: none;
+border-bottom: 1px solid black;
+padding-top: 10px;
+padding-bottom: 10px;
+
+}
